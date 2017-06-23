@@ -3,7 +3,6 @@
 /* Programa: Intercambio de variables
  * Entradas: Dos valores numéricos
  * Salidas: Los valores intercambiados
-
  */
 
 int main ()
