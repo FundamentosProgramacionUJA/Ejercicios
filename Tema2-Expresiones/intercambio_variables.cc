@@ -3,7 +3,6 @@
 /* Programa: Intercambio de variables
  * Entradas: Dos valores numéricos
  * Salidas: Los valores intercambiados
-
  */
 
 int main ()
@@ -11,7 +10,7 @@ int main ()
 	double x, y;
 	std::cout << "Introduzca dos valores numéricos: ";
 	std::cin >> x >> y;
-	std::cout << "Valores introdcidos:\n x = " << x << " y = " << y << '\n';
+	std::cout << "Valores introducidos:\n x = " << x << " y = " << y << '\n';
 	double temp = x;
 	x = y;
 	y = temp;
