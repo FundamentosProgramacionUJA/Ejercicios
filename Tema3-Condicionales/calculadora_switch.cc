@@ -3,8 +3,8 @@
 using namespace std;
 
 /* Programa: MiniCalculadora
- * Entradas: Dos valores reales y un car·cter (+, -, / Û *) indicando el tipo de operaciÛn binaria
- * Salidas: El resultado de aplicar el tipo de operaciÛn a los operandos
+ * Entradas: Dos valores reales y un car√°cter (+, -, / √≥ *) indicando el tipo de operaci√≥n binaria
+ * Salidas: El resultado de aplicar el tipo de operaci√≥n a los operandos
  */
 
 int main ()
@@ -21,15 +21,14 @@ int main ()
 			cout << "Resultado: " << op1 - op2 << endl;
 			break;
 		case '*':
-        case 'x':
+        	case 'x':
 			cout << "Resultado: " << op1 * op2 << endl;
 			break;
 		case '/':
 			cout << "Resultado: " << op1 / op2 << endl;
 			break;
 		default:
-			cout << operador << ": operaciÛn no contemplada\n";
+			cout << operador << ": operaci√≥n no contemplada\n";
 	}
 	return 0;
 }
-
