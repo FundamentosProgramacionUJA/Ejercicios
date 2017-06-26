@@ -13,7 +13,7 @@ int main ()
 	double a, b, c;
 	cout << "Introduzca los valores de a, b y c separados por espacios: ";
 	cin >> a >> b >> c;
-	cout << "Valor primero: " << (-b+sqrt(b*b - 4*a*c))/(2*a) << endl;
-	cout << "Valor segundo: " << (-b-sqrt(b*b - 4*a*c))/(2*a) << endl;
+	cout << "Primera raíz: " << (-b+sqrt(b*b - 4*a*c))/(2*a) << endl;
+	cout << "Segunda raíz: " << (-b-sqrt(b*b - 4*a*c))/(2*a) << endl;
 	return 0;
 }
