@@ -27,8 +27,16 @@ int main ()
 		}
 	}
 	// Forma 2
+	if (a >= b && a >= c) {
+        cout << "El mayor calculado de la segunda forma es " << a << endl;
+    } else if (b > c) {
+ 			cout << "El mayor calculado de la segunda forma es " << b << endl;
+    } else {
+		cout << "El mayor calculado de la segunda forma es " << c << endl;
+    }
+	// Forma 3
 	double max = a > b ? (a > c ? a : c) : (b > c ? b : c);
-	cout << "El mayor calculado de la segunda forma: " << max << endl;
+	cout << "El mayor calculado de la tercera forma: " << max << endl;
 	return 0;
 }
 
