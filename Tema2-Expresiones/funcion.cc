@@ -12,6 +12,6 @@ int main ()
 	double x, y;
 	std::cout << "Introduzca los valores de x e y separados por espacios: ";
 	std::cin >> x >> y;
-	std::cout << "La función vale: " << sqrt (x) / (y*y -1) << '\n';
+	std::cout << "La función vale: " << sqrt(x) / (y*y - 1) << '\n';
 	return 0;
 }
