@@ -3,19 +3,19 @@
 using namespace std;
 
 /* Programa: esMinusculaoMayuscula
- * Entradas: Un carácter
- * Salidas: Indica si el carácter es una vocal minúscula, es una vocal mayúscula o no es una vocal
+ * Entradas: Un carÃ¡cter
+ * Salidas: Indica si el carÃ¡cter es una vocal minÃºscula, es una vocal mayÃºscula o no es una vocal
  */
 
 int main ()
 {
-	char letra;
-	cout << "Introduce una letra: ";
-	cin >> letra;
-	if (letra == 'a' || letra == 'e' || letra == 'i' || letra ==  'o' || letra == 'u')
-		cout << "Has introducido una vocal minúscula\n";
-	else if (letra == 'A' || letra == 'E' || letra == 'I' || letra ==  'O' || letra == 'U')
-		cout << "Has introducido una vocal mayúscula\n";
+    char letra;
+    cout << "Introduce una letra: ";
+    cin >> letra;
+    if (letra == 'a' || letra == 'e' || letra == 'i' || letra ==  'o' || letra == 'u')
+	cout << "Has introducido una vocal minÃºscula\n";
+    else if (letra == 'A' || letra == 'E' || letra == 'I' || letra ==  'O' || letra == 'U')
+	cout << "Has introducido una vocal mayÃºscula\n";
     else
         cout << "No has introducido una vocal\n";
 
@@ -26,14 +26,14 @@ int main ()
         case 'i':
         case 'o':
         case 'u':
-            cout << "Has introducido una vocal minúscula\n";
+            cout << "Has introducido una vocal minÃºscula\n";
             break;
         case 'A':
         case 'E':
         case 'I':
         case 'O':
         case 'U':
-            cout << "Has introducido una vocal mayúscula\n";
+            cout << "Has introducido una vocal mayÃºscula\n";
             break;
         default:
             cout << "No has introducido una vocal\n";
