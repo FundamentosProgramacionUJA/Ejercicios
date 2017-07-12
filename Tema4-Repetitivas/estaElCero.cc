@@ -21,6 +21,6 @@ int main ()
         cout << "El cero estaba entre los números introducidos\n";
     else
         cout << "El cero no estaba entre los números introducidos\n";
-	return 0;
+    return 0;
 }
 
