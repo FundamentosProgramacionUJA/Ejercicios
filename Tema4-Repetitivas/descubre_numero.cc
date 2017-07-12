@@ -1,6 +1,13 @@
 #include <iostream>
 using namespace std;
 
+/* Programa: DescubreNumero
+ * Descripción: Este programa adivina un número que ha pensado el usuario.
+ *              Cada vez que se propone al usuario el número a adivinar el
+ *              usuario debe indicar si éste es igual, menor o mayor al número
+ *              propuesto.
+ */
+
 int main ()
 {
 	int inferior = 1;
