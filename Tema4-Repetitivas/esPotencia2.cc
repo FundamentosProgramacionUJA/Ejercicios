@@ -19,6 +19,6 @@ int main ()
         cout << numero << " es una potencia de dos\n";
     else
         cout << numero << " no es una potencia de dos\n";
-	return 0;
+    return 0;
 }
 
