@@ -11,7 +11,8 @@ int main ()
 {
     const int TAMMAX = 1000;
     int v[TAMMAX];
-    int nel; // número de elemntos del vector
+    int nel; // número de elementos del vector (tamaño lógico)
+    // lectura del tamaño lógico
     do {
         cout << "Introduzca el número de elementos del vector: ";
         cin >> nel;
