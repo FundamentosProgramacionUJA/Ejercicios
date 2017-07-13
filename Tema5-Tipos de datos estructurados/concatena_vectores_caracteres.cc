@@ -1,11 +1,11 @@
 /* ---------------------------------------------------------------------------
  * Programa: concatena_vectores_caracteres
  * Entradas: Dos vectores de caracteres (realmente se definen en el programa)
- * Salidas:  Un vector con los elementos del primer vector seguido de los elementos del segundo vector
+ * Salidas:  Un vector con los elementos del primer vector seguido de los 
+ *           elementos del segundo vector
  * --------------------------------------------------------------------------- */
 
 #include <iostream>
-
 using namespace std;
 
 int main ()
@@ -18,16 +18,16 @@ int main ()
 
 	int ir = 0; // índice de trabajo en el vector r
 	for (int i = 0; i < TAM1; i++) {
-        r[ir] = v1[i];
-        ir++;
+             r[ir] = v1[i];
+             ir++;
 	}
 	for (int i = 0; i < TAM2; i++) {
-        r[ir] = v2[i];
-        ir++;
+            r[ir] = v2[i];
+            ir++;
 	}
 	cout << "El vector contatenado es: ";
 	for (int i = 0; i < ir; i++)
-        cout << r[i];
-    cout << '\n';
+            cout << r[i];
+        cout << '\n';
 	return 0;
 }
