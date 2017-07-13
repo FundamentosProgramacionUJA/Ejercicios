@@ -13,12 +13,12 @@ using namespace std;
 int main ()
 {
     const int NDATOS = 6;
-	int datos[NDATOS]= {1, 3, 5, 7, 11, 20};
-	int n;
+    int datos[NDATOS]= {1, 3, 5, 7, 11, 20};
+    int n;
     cout << "Introduzca un valor entero: ";
     cin >> n;
-    bool esta;
-    for (int i = 0; i < NDATOS; ++i) {
+    bool esta = false;
+    for (int i = 0; i < NDATOS; ++i) { // i < NDATOS && !esta más eficiente
         if (datos[i] == n)
             esta = true;
     }
@@ -26,5 +26,5 @@ int main ()
         cout << n << " se encuentra en el vector\n";
     else
         cout << n << " no se encuentra en el vector\n";
-	return 0;
+    return 0;
 }
