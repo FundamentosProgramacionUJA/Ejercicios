@@ -23,8 +23,8 @@ int main ()
 
 	double menor = abs(v[0] - v[1]);
 	for (int i = 2; i < N; i++)
-		if (abs (v[i-1]-v[i]) < menor)
-			menor = abs (v[i-1]-v[i]);
+		if (abs (v[i-1] - v[i]) < menor)
+			menor = abs (v[i-1] - v[i]);
 	cout << "La diferencia menor es " << menor << endl;
 	return 0;
 }
