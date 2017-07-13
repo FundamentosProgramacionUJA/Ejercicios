@@ -6,7 +6,6 @@
  * --------------------------------------------------------------------------- */
 
 #include <iostream>
-
 using namespace std;
 
 int main ()
@@ -30,5 +29,5 @@ int main ()
         cout << "El número es " << solucion << endl;
     else
         cout << "No existe ningún número igual a la suma del resto\n";
-	return 0;
+    return 0;
 }
