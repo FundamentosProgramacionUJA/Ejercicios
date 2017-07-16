@@ -23,23 +23,23 @@ int main ()
 	// VERSIÓN 1: Utiliza una variable por vocal para acumular ocurrencias
 	int ocu_a = 0, ocu_e = 0, ocu_i = 0, ocu_o = 0, ocu_u = 0;
 	for (int i = 0; i < cadena.length(); ++i) {
-        switch (cadena[i]) {
-            case 'a':
-                ocu_a++;
-                break;
-            case 'e':
-                ocu_e++;
-                break;
-            case 'i':
-                ocu_i++;
-                break;
-            case 'o':
-                ocu_o++;
-                break;
-            case 'u':
-                ocu_u++;
-                break;
-        }
+        	switch (cadena[i]) {
+            		case 'a':
+                		ocu_a++;
+                		break;
+            		case 'e':
+                		ocu_e++;
+                		break;
+            		case 'i':
+                		ocu_i++;
+                		break;
+            		case 'o':
+                		ocu_o++;
+                		break;
+            		case 'u':
+                		ocu_u++;
+                		break;
+        	}
 	}
 	cout << "Salida de la versión 1 del programa:\n";
 	cout << "Ocurrencias de la a: " << ocu_a << endl;
