@@ -30,8 +30,8 @@ int main ()
 	while (n < TAMMAX && nombre != CENTINELA) {
 		v[n].nombre = nombre;
 		do {
-            cout << "Introduzca una s o n para indicar si tiene minusvalía: ";
-            cin >> c;
+            		cout << "Introduzca una s o n para indicar si tiene minusvalía: ";
+            		cin >> c;
 		} while (c != 's' && c != 'n');
 		v[n].minusvalia = c == 's';
 		n++;
