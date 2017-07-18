@@ -8,13 +8,13 @@ using namespace std;
  *   - num: un número de dni
  * Valor de retorno: la letra asociada al número de dni num
  */
-char letraDNI (int num)
+char letraDNI(int num)
 {
 	string letras = "TRWAGMYFPDXBNJZSQVHLCKE";
 	return letras[num % 23];
 }
 
-int main () {
+int main() {
 	int dni;
 	char letra_dni;
 	do {
