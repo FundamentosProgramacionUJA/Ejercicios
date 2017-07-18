@@ -8,7 +8,7 @@ using namespace std;
  * Precondiciones: n >= 0
  * Valor de retorno: la suma de los dígitos de n
  */
-int sumaDigitos (int n)
+int sumaDigitos(int n)
 {
 	int r = 0;
 	while (n > 9) {
@@ -18,7 +18,7 @@ int sumaDigitos (int n)
 	return r + n;
 }
 
-int main ()
+int main()
 {
 	int x;
 	do {
