@@ -14,7 +14,7 @@ void cambiaSigno(double v[], int tamv)
         v[i] = -v[i];
 }
 
-int main ()
+int main()
 {
     const int TAM = 5;
     double vec[TAM] = {2, -3, -4, 1, 1};
