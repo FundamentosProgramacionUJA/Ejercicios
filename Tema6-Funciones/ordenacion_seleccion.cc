@@ -22,7 +22,7 @@ void intercambia (int& x, int& y)
  * Precondiciones: i <= f, i y f son posiciones válidas de v
  * Valor de retorno: la posición del menor elemento del vector entre las posiciones [i,f]
  */
-int minimo (const int v[], int i, int f)
+int minimo(const int v[], int i, int f)
 {
 	int posmin = i;
 	for (int x = i+1; x <= f; ++x)
@@ -37,12 +37,12 @@ int minimo (const int v[], int i, int f)
  * Parametros de entrada y salida:
  *  - v: el vector a ordenar
  */
-void seleccion (int v[], int tamv) {
+void seleccion(int v[], int tamv) {
 	for (int i = 0; i < tamv - 1; ++i) {
 		int posmin = minimo (v, i, tamv - 1);
 		if (posmin != i)
 			intercambia (v[i], v[posmin]);
-   }
+   	}
 }
 
 /* Descripción: Muestra los elementos de un vector en una línea de la salida estándar
@@ -50,7 +50,7 @@ void seleccion (int v[], int tamv) {
  *  - v: el vector
  *  - tamv: el número de elementos del vector
  */
-void muestra (const int v[], int tamv) {
+void muestra(const int v[], int tamv) {
    for (int i = 0; i < tamv; ++i)
 	   cout << v[i] << ' ';
 	cout << '\n';
