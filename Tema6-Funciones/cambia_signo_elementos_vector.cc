@@ -8,7 +8,7 @@ using namespace std;
  * Parámetros de entrada/salida:
  *   - v: el vector de elementos
  */
-void cambiaSigno (double v[], int tamv)
+void cambiaSigno(double v[], int tamv)
 {
     for (int i = 0; i < tamv; i++)
         v[i] = -v[i];
@@ -23,9 +23,9 @@ int main ()
         cout << vec[i] << ' ';
     cout << '\n';
     cambiaSigno(vec, TAM);
-    cout << "Elementos del vector al cambiarles el signo:\n";
+    cout << "Elementos del vector tras cambiarles el signo:\n";
     for (int i = 0; i < TAM; i++)
         cout << vec[i] << ' ';
     cout << '\n';
-	return 0;
+    return 0;
 }
