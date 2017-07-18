@@ -5,13 +5,13 @@ using namespace std;
 
 /* Descripción: Calcula si un carácter es un dígito
  * Parámetros de entrada:
- *   - c: un carácter
+ *  - c: un carácter
  * Valor de retorno: un valor lógico indicando si c es un dígito
  */
 bool letraDigito (char c)
 {
 	if (c == '0' || c == '1' || c == '2' || c == '3' || c == '4' ||
-		c == '5' || c == '6' || c == '7' || c == '8' || c == '9')
+	    c == '5' || c == '6' || c == '7' || c == '8' || c == '9')
 		return true;
 	return false;
 }
