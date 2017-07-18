@@ -10,7 +10,7 @@ using namespace std;
  * Precondiciones:
  *   - El vector sal tiene al menos tamaño n
  */
-void perfectos (int n, int sal[])
+void perfectos(int n, int sal[])
 {
 	int cont = 0, num = 2;
 	while (cont < n) {
@@ -26,7 +26,7 @@ void perfectos (int n, int sal[])
 	}
 }
 
-int main ()
+int main()
 {
 	const int TAM = 4;
 	int v[TAM];
