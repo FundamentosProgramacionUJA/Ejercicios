@@ -8,9 +8,10 @@ using namespace std;
  *   - tamv: número de elementos de v
  * Parámetros de salida:
  *   - impares: el vector con los elementos impares de v
- * Valor de retorno: el número de elementos impares de v (es decir, el tamaño del vector impares)
+ * Valor de retorno: el número de elementos impares de v (es decir, el tamaño 
+ *                   lógico del vector impares)
  */
-int impares (const int v[], int tamv, int impares[])
+int impares(const int v[], int tamv, int impares[])
 {
     int tamImpares = 0;
     for (int i = 0; i < tamv; i++) {
@@ -37,5 +38,5 @@ int main ()
     for (int i = 0; i < timp; i++)
         cout << imp[i] << ' ';
     cout << '\n';
-	return 0;
+    return 0;
 }
