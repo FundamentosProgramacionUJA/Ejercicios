@@ -11,9 +11,9 @@ using namespace std;
  *   - corta: la cadena más corta entre s1 y s2 (s1 si tienen el mismo número de caracteres)
  *   - larga: la cadena más larga entre s1 y s2 (s2 si tienen el mismo número de caracteres)
  */
-void masCortayLarga (const string& s1, const string& s2, string& corta, string& larga)
+void masCortayLarga(string s1, string s2, string& corta, string& larga)
 {
-    if (s1.length () <= s2.length()) {
+    if (s1.length() <= s2.length()) {
         corta = s1;
         larga = s2;
     } else {
@@ -22,7 +22,7 @@ void masCortayLarga (const string& s1, const string& s2, string& corta, string& 
     }
 }
 
-int main () {
+int main() {
     string corta, larga;
 	masCortayLarga("abc", "xyz", corta, larga);
 	cout << "Corta: " << corta << ". Larga: " << larga << endl;
