@@ -8,10 +8,10 @@ using namespace std;
  *   - c: un carácter
  * Valor de retorno: un valor lógico indicando si c es un dígito
  */
-bool letraDigito (char c)
+bool letraDigito(char c)
 {
 	if (c == '0' || c == '1' || c == '2' || c == '3' || c == '4' ||
-		c == '5' || c == '6' || c == '7' || c == '8' || c == '9')
+	    c == '5' || c == '6' || c == '7' || c == '8' || c == '9')
 		return true;
 	return false;
 }
@@ -21,7 +21,7 @@ bool letraDigito (char c)
  *   - s: cadena de caracteres
  * Valor de retorno: Número de dígitos que contiene s
  */
-int nDigitosCadena (string s)
+int nDigitosCadena(string s)
 {
 	int cont = 0;
 	for (int i = 0; i < s.length (); ++i)
