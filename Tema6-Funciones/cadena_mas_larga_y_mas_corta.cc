@@ -24,11 +24,11 @@ void masCortayLarga(string s1, string s2, string& corta, string& larga)
 
 int main() {
     string corta, larga;
-	masCortayLarga("abc", "xyz", corta, larga);
-	cout << "Corta: " << corta << ". Larga: " << larga << endl;
-	masCortayLarga("abc", "Hola", corta, larga);
-	cout << "Corta: " << corta << ". Larga: " << larga << endl;
-	masCortayLarga("abc", "su", corta, larga);
-	cout << "Corta: " << corta << ". Larga: " << larga << endl;
-	return 0;
+    masCortayLarga("abc", "xyz", corta, larga);
+    cout << "Corta: " << corta << ". Larga: " << larga << endl;
+    masCortayLarga("abc", "Hola", corta, larga);
+    cout << "Corta: " << corta << ". Larga: " << larga << endl;
+    masCortayLarga("abc", "su", corta, larga);
+    cout << "Corta: " << corta << ". Larga: " << larga << endl;
+    return 0;
 }
