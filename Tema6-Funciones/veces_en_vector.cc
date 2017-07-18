@@ -17,7 +17,7 @@ struct ocurrencias {
  * Precondiciones:
  *   - El vector ocu tiene el suficiente tamaño como para albergar todos los elementos no repetidos de v
  */
-void vecesVector (const int v[], int tamv, ocurrencias ocu[], int& tamocu)
+void vecesVector(const int v[], int tamv, ocurrencias ocu[], int& tamocu)
 {
 	tamocu = 0;
 	for (int i = 0; i < tamv; i++) {
@@ -36,13 +36,13 @@ void vecesVector (const int v[], int tamv, ocurrencias ocu[], int& tamocu)
 	}
 }
 
-int main ()
+int main()
 {
 	const int TAM = 10;
 	int vec[TAM] = {1, 2, 2, 1, 3, 4, 1, 6, 5, 3};
 	ocurrencias o[TAM];
 	int tamo;
-	vecesVector (vec, TAM, o, tamo);
+	vecesVector(vec, TAM, o, tamo);
 	for (int i = 0; i < tamo; i++)
 		cout << "Valor: " << o[i].valor << ". Ocurrencias: " << o[i].nveces << endl;
 	return 0;
