@@ -9,24 +9,24 @@ using namespace std;
  *   - s2: Una cadena de caracteres
  * Valor de retorno: Un valor lógico indicando si s1 es menor lexicográficamente que s2
  */
-bool menor (const string& s1, const string& s2)
+bool menor(string s1, string s2)
 {
 	int i = 0;
-	while (i < s1.length () && i < s2.length ()) {
+	while (i < s1.length() && i < s2.length()) {
 		if (s1[i] != s2[i])
 			return s1[i] < s2[i];
 		i++;
 	}
-	return s1.length () < s2.length ();
+	return s1.length() < s2.length();
 }
 
-int main ()
+int main()
 {
 	string s1, s2;
 	cout << "Introduzca una cadena de caracteres: ";
-	getline (cin, s1);
+	getline(cin, s1);
 	cout << "Introduzca una segunda cadena de caracteres: ";
-	getline (cin, s2);
-	cout << s1 << (menor (s1, s2) ? " < " : " >= ") << s2 << endl;
+	getline(cin, s2);
+	cout << s1 << (menor(s1, s2) ? " < " : " >= ") << s2 << endl;
 	return 0;
 }
