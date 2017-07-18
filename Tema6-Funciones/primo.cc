@@ -7,7 +7,7 @@ using namespace std;
  *   - n: un número entero positivo
  * Valor de retorno: un valor de tipo lógico indicando si es primo
  */
-bool esPrimo (int n)
+bool esPrimo(int n)
 {
 	for (int i = 2; i*i <= n; i++)
 		if (n % i == 0)
@@ -15,7 +15,7 @@ bool esPrimo (int n)
 	return true;
 }
 
-int main ()
+int main()
 {
 	int x;
 	cout << "Introduzca un entero positivo: ";
