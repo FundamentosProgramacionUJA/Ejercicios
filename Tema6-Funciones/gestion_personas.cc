@@ -53,7 +53,7 @@ void desplazaDer(int pos, Persona v[], int tamv)
  * Parámetros de entrada y salida:
  *   - v: el vector de datos de tipo Persona
  */
-void desplazaIzq (int pos, Persona v[], int tamv)
+void desplazaIzq(int pos, Persona v[], int tamv)
 {
 	for (int i = pos+1; i < tamv; i++)
 		v[i-1] = v[i];
@@ -64,7 +64,7 @@ void desplazaIzq (int pos, Persona v[], int tamv)
  *   - v: vector con las personas
  *   - tamv: número de elementos de v
  */
-void muestra (const Persona v[], int tamv)
+void muestra(const Persona v[], int tamv)
 {
 	for (int i = 0; i < tamv; i++)
 		cout << v[i].nombre << " --- " << v[i].dni << " --- " << v[i].edad << '\n';
