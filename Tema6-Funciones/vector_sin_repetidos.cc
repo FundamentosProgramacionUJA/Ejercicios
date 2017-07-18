@@ -10,10 +10,10 @@ using namespace std;
  *   - sal: vector donde se almacenan los elementos de v sin repetidos
  * Precondiciones:
  *   - El vector sal tiene suficiente tamaño como para albergar los elementos no repetidos de v
- * Valor de retorno: el número de elementos de sal. Es decir, el número de elementos de v si no se
- *                   cuentan los repetidos
+ * Valor de retorno: el número de elementos de sal. Es decir, el número de elementos no 
+ *                   repetidos en v
  */
-int sinRepetidos (const int v[], int tamv, int sal[])
+int sinRepetidos(const int v[], int tamv, int sal[])
 {
 	int tamsal = 0;
 	for (int i = 0; i < tamv; i++) {
@@ -29,7 +29,7 @@ int sinRepetidos (const int v[], int tamv, int sal[])
 	return tamsal;
 }
 
-int main ()
+int main()
 {
 	const int TAM = 6;
 	int v[TAM] = { 2, 4, 2, 7, 7, 2 };
