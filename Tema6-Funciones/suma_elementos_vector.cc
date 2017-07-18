@@ -20,5 +20,5 @@ int main ()
 {
     double vec[5] = {2, 2, 3.5, 1, 1};
     cout << "La suma de los elementos del vector es " << suma(vec, 5) << endl;
-	return 0;
+    return 0;
 }
