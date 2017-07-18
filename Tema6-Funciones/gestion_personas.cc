@@ -21,7 +21,7 @@ struct Persona {
  *                   no existe tal posición, es decir, si dni es mayor que todos los DNIs de las
  *                   personas del vector, devuelve tamv.
  */
-int posicion (const string& dni, const Persona v[], int tamv)
+int posicion(string dni, const Persona v[], int tamv)
 {
 	for (int i = 0; i < tamv; i++)
 		if (v[i].dni >= dni)
@@ -39,7 +39,7 @@ int posicion (const string& dni, const Persona v[], int tamv)
  * Precondiciones:
  *   - El vector v tiene reservadas al menos tamv+1 posiciones
  */
-void desplazaDer (int pos, Persona v[], int tamv)
+void desplazaDer(int pos, Persona v[], int tamv)
 {
 	for (int i = tamv-1; i >= pos; i--)
 		v[i+1] = v[i];
