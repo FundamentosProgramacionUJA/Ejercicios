@@ -12,6 +12,6 @@ int main ()
 	double practicas, teoria, participacion;
 	cout << "Introduzca la nota de prácticas, teoría y participación en ese orden: ";
 	cin>> practicas >> teoria >> participacion;
-	cout << "La nota final es: " << practicas*0.3 + teoria*0.6 + participacion*0.1 << endl;
+	cout << "La nota final es: " << practicas * 0.3 + teoria * 0.6 + participacion * 0.1 << endl;
 	return 0;
 }
