@@ -29,5 +29,22 @@ int main ()
         cout << "El número es " << solucion << endl;
     else
         cout << "No existe ningún número igual a la suma del resto\n";
+    // Otra forma de hacerlo.
+    existe = false;
+    for (int i = 0; i < TAM && !existe; i++) {
+        suma = 0; // suma del resto de números
+        for (int j = 0; j < TAM; j++) {
+                if (i != j)
+                    suma += v[j];
+        }
+        if (v[i] == suma) {
+            solucion = v[i];
+            existe = true;
+        }
+    }
+    if (existe)
+        cout << "El número es " << solucion << endl;
+    else
+        cout << "No existe ningún número igual a la suma del resto\n";
     return 0;
 }
