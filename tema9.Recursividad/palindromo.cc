@@ -12,11 +12,11 @@ using namespace std;
  * Precondiciones: la subcadena no contiene mayúsculas, ni signos de puntuación, ni espacios en blanco ni tildes.
  * Valor de retorno: un valor lógico indicando si subcadena que ocupa las posiciones [ini, fin] es un palíndromo.
  */
-bool palindromo (const string& cadena, int ini, int fin)
+bool palindromo (string cadena, int ini, int fin)
 {
 	if (ini >= fin)
 		return true;
-	return cadena[ini] == cadena[fin] && palindromo (cadena, ini+1, fin-1);
+	return cadena[ini] == cadena[fin] && palindromo (cadena, ini + 1, fin - 1);
 }
 
 /* Descripción: Calcula si una cadena es un palíndromo. La cadena no contiene mayúsculas, ni signos de puntuación, 
@@ -26,7 +26,7 @@ bool palindromo (const string& cadena, int ini, int fin)
  * Precondiciones: cadena no contiene mayúsculas, ni signos de puntuación, ni espacios en blanco ni tildes.
  * Valor de retorno: un valor lógico indicando si cadena es un palíndromo.
  */
-bool palindromo (const string& cadena)
+bool palindromo (string cadena)
 {
 	return palindromo (cadena, 0, cadena.length () -1);
 }
