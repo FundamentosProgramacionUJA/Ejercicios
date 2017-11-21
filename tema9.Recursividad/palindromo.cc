@@ -28,7 +28,7 @@ bool palindromo (string cadena, int ini, int fin)
  */
 bool palindromo (string cadena)
 {
-	return palindromo (cadena, 0, cadena.length () -1);
+	return palindromo (cadena, 0, cadena.length () - 1);
 }
 
 int main () {
