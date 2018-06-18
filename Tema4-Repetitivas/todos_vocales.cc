@@ -10,17 +10,17 @@ using namespace std;
 
 int main()
 {
-	bool todosVocales = true;
-	char c;
-	cout << "Introduzca un carácter (+ o - para terminar): ";
-	cin >> c;
+    bool todosVocales = true;
+    char c;
+    cout << "Introduzca un carácter (+ o - para terminar): ";
+    cin >> c;
 	while (c != '+' && c != '-') {
-		if (c != 'a' && c != 'e' && c != 'i' && c != 'o' && c != 'u')
+        if (c != 'a' && c != 'e' && c != 'i' && c != 'o' && c != 'u')
             todosVocales = false;
         cout << "Introduzca un carácter (+ o - para terminar): ";
         cin >> c;
 	}
-	if (todosVocales)
+    if (todosVocales)
         cout << "Todos los caracteres han sido vocales minúsculas\n";
     else
         cout << "No todos los caracteres han sido vocales minúsculas\n";
