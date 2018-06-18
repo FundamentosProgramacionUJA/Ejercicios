@@ -19,11 +19,11 @@ int main()
             todosVocales = false;
         cout << "Introduzca un carácter (+ o - para terminar): ";
         cin >> c;
-	}
+    }
     if (todosVocales)
         cout << "Todos los caracteres han sido vocales minúsculas\n";
     else
         cout << "No todos los caracteres han sido vocales minúsculas\n";
-	return 0;
+    return 0;
 }
 
