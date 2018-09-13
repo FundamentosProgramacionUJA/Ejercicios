@@ -1,8 +1,8 @@
 #include <iostream>
 
-/* Programa: Dibuja rect·ngulo
+/* Programa: Dibuja rect√°ngulo
  * Entradas: Un entero positivo n
- * Salidas: Dibuja un tri·ngulo rect·ngulo de base y altura n
+ * Salidas: Dibuja un tri√°ngulo rect√°ngulo de base y altura n
  */
 int main() {
     int n;
@@ -15,5 +15,5 @@ int main() {
             std::cout << "* ";
         std::cout << "\n";
     }
-	return 0;
+    return 0;
 }
