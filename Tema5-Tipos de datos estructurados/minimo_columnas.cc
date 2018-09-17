@@ -3,7 +3,7 @@ using namespace std;
 
 /* Programa: minimo_columnas
  * Entradas: Las dimensiones y elementos de una matriz.
- * Salidas: El mínimo de los elementos de cada columna de la matriz
+ * Salidas: El mÃ­nimo de los elementos de cada columna de la matriz
  */
 
 int main () {
@@ -12,13 +12,14 @@ int main () {
   double m[MAXFILAS][MAXCOL];
   double minimos[MAXCOL];
   int nfilas, ncol;
+  
   do {
-    cout << "Número de filas (máximo " << MAXFILAS << "): ";
+    cout << "NÃºmero de filas (mÃ¡ximo " << MAXFILAS << "): ";
     cin >> nfilas;
   } while (nfilas < 0 || nfilas > MAXFILAS);
 
   do {
-    cout << "Número de columnas (máximo " << MAXCOL << "): ";
+    cout << "NÃºmero de columnas (mÃ¡ximo " << MAXCOL << "): ";
     cin >> ncol;
   } while (ncol < 0 || ncol > MAXCOL);
 
@@ -46,9 +47,9 @@ int main () {
      cout << endl;
   }
 
-  cout << "\nMínimos:\n";
+  cout << "\nMÃ­nimos:\n";
   for (int c = 0; c < ncol; c++) {
-     cout << "El mínimo de la columna " << c << " es " << minimos[c] << endl;
+     cout << "El mÃ­nimo de la columna " << c << " es " << minimos[c] << endl;
   }
   return 0;
 }
