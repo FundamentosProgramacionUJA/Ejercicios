@@ -4,8 +4,8 @@ using namespace std;
 const int NFILAS = 10;
 const int NCOL = 10;
 
-/* Descripción: Pone a libres todos los asientos de una sala
- * Parámetros de entrada y salida:
+/* DescripciÃ³n: Pone a libres todos los asientos de una sala
+ * ParÃ¡metros de entrada y salida:
  *   - sala: La matriz representando la sala de cine
  */
 void inicia(bool sala[][NCOL]) {
@@ -14,8 +14,8 @@ void inicia(bool sala[][NCOL]) {
             sala[f][c] = true;
 }
 
-/* Descripción: Muestra en la salida estándar la sala de cine
- * Parámetros de entrada:
+/* DescripciÃ³n: Muestra en la salida estÃ¡ndar la sala de cine
+ * ParÃ¡metros de entrada:
  *   - sala: La matriz representando la sala de cine
  */
 void visualiza(const bool sala[][NCOL]) {
@@ -31,10 +31,10 @@ void visualiza(const bool sala[][NCOL]) {
     }
 }
 
-/* Descripción: Cuenta el número de asientos libres en la sala
- * Parámetros de entrada:
+/* DescripciÃ³n: Cuenta el nÃºmero de asientos libres en la sala
+ * ParÃ¡metros de entrada:
  *   - sala: La matriz representando la sala de cine
- * Valor de retorno: el número de asientos libres
+ * Valor de retorno: el nÃºmero de asientos libres
  */
 int libres(const bool sala[][NCOL]) {
     int lib = 0;
@@ -47,13 +47,13 @@ int libres(const bool sala[][NCOL]) {
     return lib;
 }
 
-/* Descripción: Calcula las filas que tienen un cierto número de asientos libres
- * Parámetros de entrada:
+/* DescripciÃ³n: Calcula las filas que tienen un cierto nÃºmero de asientos libres
+ * ParÃ¡metros de entrada:
  *   - sala: La matriz representando la sala de cine
- *   - n: número de asientos
- * Parámetros de salida:
- *   - filas: vector con los números de filas que contienen n asientos libres
- * Valor de retorno: número de filas con n asientos libres
+ *   - n: nÃºmero de asientos
+ * ParÃ¡metros de salida:
+ *   - filas: vector con los nÃºmeros de filas que contienen n asientos libres
+ * Valor de retorno: nÃºmero de filas con n asientos libres
  */
 int filasLibres(const bool sala[][NCOL], int n, int filas[]) {
     int nFilas = 0;
@@ -71,18 +71,18 @@ int filasLibres(const bool sala[][NCOL], int n, int filas[]) {
     return nFilas;
 }
 
-/* Descripción: Reserva n asientos en una fila
- * Parámetros de entrada:
+/* DescripciÃ³n: Reserva n asientos en una fila
+ * ParÃ¡metros de entrada:
  *   - f: fila
- *   - n: número de asientos
- * Parámetros de salida:
- *   - reservados: vector con los números de asientos reservados
- * Parámetros de entrada y salida:
+ *   - n: nÃºmero de asientos
+ * ParÃ¡metros de salida:
+ *   - reservados: vector con los nÃºmeros de asientos reservados
+ * ParÃ¡metros de entrada y salida:
  *   - sala: La matriz representando la sala de cine
  * Precondiciones: la fila es correcta y contiene al menos n asientos libres
  */
 void reservaFila(bool sala[][NCOL], int f, int n, int reservados[]) {
-    int nReservados = 0; // número de asientos reservados
+    int nReservados = 0; // nÃºmero de asientos reservados
     for (int c = 0; c < NCOL && nReservados < n; c++) {
         if (sala[f][c]) {
             sala[f][c] = false;
@@ -92,20 +92,20 @@ void reservaFila(bool sala[][NCOL], int f, int n, int reservados[]) {
     }
 }
 
-/* Descripción: Si hay al menos n asientos libres los reserva
- * Parámetros de entrada:
- *   - n: número de asientos
- * Parámetros de salida:
- *   - reservados: vector con los números de asientos reservados
- * Parámetros de entrada y salida:
+/* DescripciÃ³n: Si hay al menos n asientos libres los reserva
+ * ParÃ¡metros de entrada:
+ *   - n: nÃºmero de asientos
+ * ParÃ¡metros de salida:
+ *   - reservados: vector con los nÃºmeros de asientos reservados
+ * ParÃ¡metros de entrada y salida:
  *   - sala: La matriz representando la sala de cine
- * Valor de retorno: un valor lógico indicando si la sala contiene al menos n
+ * Valor de retorno: un valor lÃ³gico indicando si la sala contiene al menos n
  *                   asientos libres
  */
 bool reservaAsientos(bool sala[][NCOL], int n, int reservados[]) {
     if (libres(sala) < n)
         return false;
-    int nReservados = 0; // número de asientos reservados
+    int nReservados = 0; // nÃºmero de asientos reservados
     for (int f = 0; f < NFILAS && nReservados < n; f++) {
         for (int c = 0; c < NCOL && nReservados < n; c++) {
             if (sala[f][c]) {
@@ -130,7 +130,6 @@ int main() {
         cin >> nAsientos;
         if (nAsientos > libres(sala)) {
             cout << "Lo siento, no hay tantos asientos libres\n";
-
         } else {
             int nFilas = filasLibres(sala, nAsientos, posiblesFilas);
             if (nFilas > 0) {
