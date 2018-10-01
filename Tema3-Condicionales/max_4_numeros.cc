@@ -1,23 +1,24 @@
 #include <iostream>
 
-/* Programa: MáximoCuatroNúmeros
- * Entradas: Cuatro números reales
- * Salidas: El máximo de los cuatro números
+/* Programa: MÃ¡ximoCuatroNÃºmeros
+ * Entradas: Cuatro nÃºmeros reales
+ * Salidas: El mÃ¡ximo de los cuatro nÃºmeros
  */
 
 int main ()
 {
-	double a, b, c, d;
-	std::cout << "Introduzca cuatro números separados por espacios: ";
+	double a, b, c, d, mayor;
+	std::cout << "Introduzca cuatro nÃºmeros separados por espacios: ";
 	std::cin >> a >> b >> c >> d;
-	// Forma 1: se va almacenando en la variable a el máximo
-	if (b > a)
-		a = b;
-	if (c > a)
-		a = c;
-	if (d > a)
-		a = d;
-	std::cout << "El mayor es " << a << std::endl;
+	// Forma 1: se va almacenando en la variable mayor el mÃ¡ximo
+	mayor = a;
+	if (b > mayor)
+		mayor = b;
+	if (c > mayor)
+		mayor = c;
+	if (d > mayor)
+		mayor = d;
+	std::cout << "El mayor es " << mayor << std::endl;
 	// Forma 2
 	if (a >= b && a >= c && a >= d) {
 		std::cout << "Forma 2. El mayor es " << a << std::endl;
