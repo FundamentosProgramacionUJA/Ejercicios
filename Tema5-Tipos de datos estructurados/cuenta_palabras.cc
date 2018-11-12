@@ -23,5 +23,22 @@ int main () {
 		}
 	}
 	cout << "Número de palabras: " << npalabras << '\n';
+
+	/* A continuación se resuelve de otra forma. La idea es mantener un estado sobre si estamos
+	   procesando una secuencia de espacios o una secuencia de "no espacios".
+	   El estado del procesamiento lo alamacena la variable espacio.
+	*/
+	npalabras = 0;
+	bool espacio = true; // estado del procesamiento
+	for (int i = 0; i < linea.length (); ++i) {
+        if (linea[i] != ' ' && espacio) {
+            espacio = false;
+            npalabras++;
+        } else if (linea[i] == ' ' && !espacio) {
+            espacio = true;
+        }
+	}
+	cout << "Número de palabras: " << npalabras << '\n';
+
 	return 0;
 }
