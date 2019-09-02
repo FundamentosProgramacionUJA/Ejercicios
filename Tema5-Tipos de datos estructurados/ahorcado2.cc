@@ -32,12 +32,12 @@ int main () {
 		switch (opMenu) {
 			case 1:
 			    do {
-				    cout << "Índice de palabra (0-" << NUMPAL << "): ";
-				    cin >> indice;
+				cout << "Índice de palabra (0-" << NUMPAL << "): ";
+				cin >> indice;
 			    } while (indice < 0 || indice >= NUMPAL);
 			    palabra = palabras[indice];
-				sePuedeJugar = true;
-				break;
+			    sePuedeJugar = true;
+			    break;
 			case 2:
 				if (!sePuedeJugar) {
 					cout << "Debe introducir antes una palabra\n";
@@ -55,8 +55,8 @@ int main () {
 					bool exito = false;
 					for (int i = 0; i < palabra.length (); i++) {
 						if (palabra[i] == letra) {
-							rellenado[i] = palabra[i];
-							exito = true;
+						    rellenado[i] = palabra[i];
+						    exito = true;
 						}
 					}
 					if (!exito) {
