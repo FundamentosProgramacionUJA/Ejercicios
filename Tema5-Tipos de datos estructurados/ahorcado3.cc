@@ -35,8 +35,8 @@ int main () {
 			case 1:
 			    indice = rand() % NUMPAL;
 			    palabra = palabras[indice];
-				sePuedeJugar = true;
-				break;
+			    sePuedeJugar = true;
+			    break;
 			case 2:
 				if (!sePuedeJugar) {
 					cout << "Debe generar antes una palabra\n";
