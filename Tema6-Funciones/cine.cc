@@ -128,6 +128,8 @@ int main() {
     while (libres(sala) > 0) {
         cout << "Cantidad de entradas: ";
         cin >> nAsientos;
+        if (nAsientos < 0)
+            break;
         if (nAsientos > libres(sala)) {
             cout << "Lo siento, no hay tantos asientos libres\n";
         } else {
