@@ -5,6 +5,7 @@
  * --------------------------------------------------------------------------- */
 
 #include <iostream>
+#include <locale>
 using namespace std;
 
 struct lista {
@@ -15,10 +16,12 @@ struct lista {
 
 int main ()
 {
+    setlocale(LC_ALL, "spanish");
     const int TAM = 100;
     lista l[TAM]; // listas electorales
     int nl; // número lógico de listas
     int ne; // número de escaños
+    int total_votos = 0;
     do {
         cout << "Introduce número de escaños: ";
         cin >> ne;
@@ -35,6 +38,7 @@ int main ()
         cout << "Número de votos: ";
         cin >> l[i].votos;
         l[i].esc = 0;
+        total_votos += l[i].votos;
     }
 
     // cálculo de escaños
@@ -49,7 +53,8 @@ int main ()
 
     // listado de escaños
     for (int i = 0; i < nl; i++) {
-        cout << "El partido " << l[i].nombre << " ha obtenido " << l[i].esc << " escaños\n";
+        cout << "El partido " << l[i].nombre << " ha obtenido " << l[i].esc << " escaños";
+        cout << " con el " << double(l[i].votos) / total_votos * 100 << "% de los votos\n";
     }
     return 0;
 }
